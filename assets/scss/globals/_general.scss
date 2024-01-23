@@ -1,0 +1,64 @@
+@use '../vendor/fonts';
+@use '../abstracts/variables' as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: 'nt_wagnerbold';
+    src: url('../fonts/nt_wagner/nt_wagner.woff2') format('woff2'),
+         url('../fonts/nt_wagner/nt_wagner.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    background-color: v.$sspColour01;
+    color: v.$sspColour03;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'nt_wagnerbold';
+}
+
+a {
+    color: inherit;
+    transition: v.$tranSimple;
+    text-transform: none;
+    &:hover {
+        color: v.$sspColour04;
+    }
+}
+
+.container {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    padding: 0 v.$spaceThick;
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+}
+
+.box-row {
+    display: flex;
+    flex-direction: row;
+    gap: v.$spaceRegular;
+}
+
+.bg-tail {
+    position: absolute;
+    margin-left: calc((100% - v.$pageWidth) / 2);
+    // margin-top: calc((100% - v.$pageWidth) / 2);
+    right: 0;
+    top: 25vh;
+    opacity: 25%;
+    path {
+    }
+}

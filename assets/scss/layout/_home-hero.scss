@@ -1,0 +1,72 @@
+@use '../abstracts/variables' as v;
+
+.home-hero {
+    display: flex;
+    flex-direction: column;
+    width: v.$fullWidth;
+    min-height: 80vh;
+    align-items: flex-start;
+    justify-content: center;
+    @media screen and (max-width: 980px) {
+        min-height: unset;
+        padding-top: 200px;
+    }
+    // @media screen and (max-width: 520px){
+    //     padding-top: 120px;
+    // }
+    .container {
+        width: v.$pageWidth;
+        display: inherit;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 980px){
+            flex-direction: column;
+        }
+        .content-wrapper {
+            width: 65%;
+            @media screen and (max-width: 980px) {
+                width: 100%;
+            }
+            h2 {
+                font-size: 4rem;
+                max-width: 19ch;
+                line-height: 1;
+                margin-bottom: 2rem;
+                @media screen and (max-width: 520px){
+                    font-size: 3rem;
+                }
+                @media screen and (max-width: 480px){
+                    font-size: 2rem;
+                }
+    
+    
+            }
+            p {
+                margin-bottom: 1rem;
+            }
+    
+        }
+        .mascot {
+            width: 45%;
+            margin-top: 100px;
+            margin-bottom: -100px;
+            img {
+                width: 100%;
+            }
+            @media screen and (max-width: 980px){
+                margin-top: 50px;
+                margin-bottom: 0;
+                margin-left: auto;
+    
+            }
+        }
+        .box-row {
+            margin-top: v.$spaceUltraThick;
+            @media screen and (max-width: 520px){
+                flex-direction: column;
+            }
+        }
+    }
+
+}

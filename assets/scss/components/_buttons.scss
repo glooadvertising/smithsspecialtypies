@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as v;
+
+button, .btn {
+    background-color: v.$sspColour05;
+    color: v.$sspColour03;
+    padding-block: none;
+    padding-inline: none;
+    padding: v.$spaceThin v.$spaceThick;
+    border: none;
+    border-radius: 100px;
+    text-decoration: none;
+    text-align: center;
+    transition: v.$tranSimple;
+    font-family: 'nt_wagnerbold';
+    cursor: pointer;
+    &:hover {
+        background-color: v.$sspColour04;
+        color: v.$sspColour01;
+    }
+}

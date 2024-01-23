@@ -1,0 +1,66 @@
+@use '../abstracts/variables' as v;
+
+.contact {
+    background-color: v.$sspColour02;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 90vh;
+    @media screen and (max-width: 720px){
+        flex-direction: column;
+        padding-top: 150px;
+    }
+
+    .container {
+        width: v.$pageWidth;
+        gap: calc(v.$spaceUltraThick * 2);
+
+        strong {
+            font-family: 'nt_wagnerbold';
+        }
+
+        .col-one {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            @media screen and (max-width: 720px){
+                width: 100%;
+            }
+        
+            .fluentform.ff-default.fluentform_wrapper_1.ffs_default_wrap {
+                width: 100%;
+                form {
+                    width: 100%;
+
+                    input, textarea {
+                        background-color: v.$sspColour01;
+                        border-radius: 0;
+                        border: none;
+                        padding-left: 0;
+                        padding-right: 0;
+                        color: white;
+                        &::placeholder {
+                            color: green;
+                        }
+                    }
+                    .error.text-danger {
+                        color: red;
+                    }
+                }
+            }
+
+        }
+        .col-two {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 40%;
+            @media screen and (max-width: 720px){
+                width: 100%;
+            }
+        }
+    
+    }
+}
