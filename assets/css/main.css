@@ -187,6 +187,7 @@ button:hover, .btn:hover {
   z-index: 100;
   max-width: 160px;
   font-family: "nt_wagnerbold";
+  font-size: 1.2rem;
   text-align: center;
   transform: rotate(-10deg);
   line-height: 1.2;
@@ -228,6 +229,11 @@ button:hover, .btn:hover {
 .main-header .container .main-logo {
   width: 200px;
   max-width: 100%;
+}
+@media screen and (max-width: 680px) {
+  .main-header .container .main-logo {
+    width: 150px;
+  }
 }
 .main-header .container .menu-content-wrapper {
   display: flex;
@@ -356,7 +362,8 @@ button:hover, .btn:hover {
 }
 @media screen and (max-width: 980px) {
   .home-hero .container .mascot {
-    margin-top: 50px;
+    width: 70%;
+    margin-top: 30px;
     margin-bottom: 0;
     margin-left: auto;
   }

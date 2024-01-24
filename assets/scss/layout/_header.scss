@@ -19,6 +19,9 @@
         .main-logo {
             width: 200px;
             max-width: 100%;
+            @media screen and (max-width: 680px) {
+                width: 150px;
+            }
         }
         .menu-content-wrapper {
             display: flex;
