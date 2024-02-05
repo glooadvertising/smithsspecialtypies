@@ -18,9 +18,9 @@
         </a>
 
         <div class="menu-content-wrapper">
-            <a href="#contact-us" class="btn">
+            <!-- <a href="#contact-us" class="btn">
                 Wholesale orders
-            </a>
+            </a> -->
             <?php get_template_part( 'partials/socials' ); ?>
         </div>
     </div>
